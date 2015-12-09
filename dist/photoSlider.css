@@ -1,0 +1,103 @@
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none outside;
+}
+
+.Lposr{
+    position: relative;
+}
+.Lposa{
+    position: absolute;
+}
+.photoSlider{
+    position: relative;
+    overflow: hidden;
+}
+
+.photoSlider .label{
+    width: 24px;
+    height: 44px;
+    opacity: 0.5;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 10;
+    background-image: url(./img/tabcontrol.png);
+}
+.photoSlider .prev{
+    background-position: 0 0;
+    left: 10px;
+}
+.photoSlider .next{
+    background-position: 0 -24px;
+    right: 10px;
+}
+
+.photoSlider .tabcontrol{
+    bottom: 24px;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    font: 0/0 'a';
+    position: absolute;
+    text-align: center;
+}
+.photoSlider .tabcontrol li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+.photoSlider .tabcontrol li + li{
+    margin-left: 10px;
+}
+.photoSlider .tabcontrol li.active{
+    background-color: #e31d1a
+}
+
+
+
+
+
+/* ------------示例用-------------- */
+.photoSlider .sliders .item{
+    z-index: -1;
+}
+
+.photoSlider{
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+}
+.sliders,.sliders .item{
+    width: 100%;
+    height: 100%;
+   
+}
+.sliders .item.active{
+    z-index: 1;
+}
+.sliders .item{
+    border: 1px solid #123;
+    font-size: 50px;
+}
+.sliders .item:nth-child(1){
+    background-color: green;
+}
+.sliders .item:nth-child(2){
+    background-color: purple;
+}
+.sliders .item:nth-child(3){
+    background-color: gold;
+}
+.sliders .item:nth-child(4){
+    background-color: gray;
+}
+.sliders .item:nth-child(5){
+    background-color: yellow;
+}
+
